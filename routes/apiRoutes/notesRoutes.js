@@ -4,6 +4,7 @@ const { notes } = require("../../db/db");
 
 router.get("/notes", (req, res) => {
   let results = notes;
+  console.log(results);
   res.json(results);
 });
 
